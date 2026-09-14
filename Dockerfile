@@ -14,7 +14,7 @@ ARG VITE_BLOCKS_API_URL=https://blocksapi.slsblx.com
 ARG VITE_BLOCKS_PROJECT_KEY
 ARG VITE_BLOCKS_X_BLOCKS_KEY=D8fb34a0fb75740f0b8a479a550807393
 ARG VITE_BLOCKS_OIDC_URL=https://iam.seliseblocks.com
-ARG VITE_BLOCKS_OIDC_CLIENT_ID
+ARG VITE_BLOCKS_OIDC_CLIENT_ID=eafc9ab8-69df-453c-b708-627e98cdef21
 ARG VITE_BLOCKS_OIDC_SCOPE="openid profile"
 ARG VITE_BLOCKS_APP_DOMAIN=https://dbfvug-elgew.slsblx.com
 ARG VITE_BLOCKS_REDIRECT_URI=https://dbfvug-elgew.slsblx.com/login/callback
