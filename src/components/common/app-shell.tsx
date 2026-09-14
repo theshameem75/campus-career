@@ -40,6 +40,13 @@ const navigation: Array<{
     label: "Opportunities",
     to: "/opportunities",
     icon: Search,
+    roles: [
+      "student",
+      "employer-user",
+      "career-staff",
+      "career-manager",
+      "university-superadmin",
+    ],
     permissions: [
       permissions.browseOpportunities,
       permissions.manageEmployerOpportunities,
@@ -130,6 +137,7 @@ export function AppShell() {
     )
     .filter(
       (item) =>
+        item.roles ||
         !item.permissions ||
         Boolean(
           session && hasAnyPermission(session.permissions, item.permissions),

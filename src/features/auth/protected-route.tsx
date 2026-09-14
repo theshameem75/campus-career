@@ -41,7 +41,14 @@ export function ProtectedRoute({
   ) {
     return <Navigate to="/unauthorized" replace />;
   }
-  if (!hasAnyPermission(session.permissions, allowedPermissions)) {
+  // Blocks IAM currently returns assigned application roles without expanding
+  // their FrontendAction permissions in iam.me(). For an explicitly role-bound
+  // route, the allowlist is the client gate and Blocks Data remains the server
+  // authorization boundary.
+  if (
+    !allowedRoles?.length &&
+    !hasAnyPermission(session.permissions, allowedPermissions)
+  ) {
     return <Navigate to="/unauthorized" replace />;
   }
   return <Outlet />;
