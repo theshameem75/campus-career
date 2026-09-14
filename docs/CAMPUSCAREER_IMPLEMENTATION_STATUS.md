@@ -13,11 +13,15 @@ Updated: 2026-09-14
   manifest tests, lint, typecheck and production build.
 - DAT-02 through DAT-06: all 36 schema definitions and fields are generated,
   deterministic, locally validated and deployed to Blocks Data.
-- DAT-07: every schema is locked to Custom access for READ, WRITE, EDIT and
-  DELETE with zero allow policies. The guarded metadata-first deployer creates
-  and locks empty schemas before adding fields.
-- IAM-02: application roles and frontend-action permission matrix authored as
-  source-controlled manifests; live role creation remains approval-gated.
+- DAT-07: every schema remains locked to Custom access for READ, WRITE, EDIT and
+  DELETE. A reviewed set of 201 organization-and-role-scoped allow policies is
+  deployed for READ, WRITE and EDIT; DELETE remains denied for every role.
+- DAT-09: an idempotent linked demo dataset is live across all 36 schemas. It
+  includes five opportunities, three applications, role assignments, profile
+  data, workflow history, follow-ups, AI explanations, notifications, audit
+  events and reporting records.
+- IAM-02: application roles and frontend-action permission matrix are
+  source-controlled; the reviewed roles and assignments are live.
 - DAT-01: existing Blocks-managed Data source confirmed.
 - FIL-01: existing `Default` Azure storage configuration confirmed.
 - MSG-01: existing `Default` mail configuration confirmed; template/delivery
@@ -28,15 +32,17 @@ Updated: 2026-09-14
 ## In progress
 
 - DAT-08: field-level value validation remains after the secure schema baseline.
-- Data-backed browser CRUD remains intentionally blocked until a trusted
-  backend/worker authorization contract or reviewed scoped policies are ready.
+- Data-backed opportunity and application views are enabled through reviewed
+  scoped policies; remaining workflow CRUD screens are still in progress.
 - WEB-01: singleton Blocks SDK client and build-time environment validation
   implemented.
 - WEB-02: hosted-login redirect, callback, cookie-session bootstrap, logout and
-  protected route guard implemented; live flow awaits approved OIDC activation.
+  protected route guard are implemented, and the deployed OIDC client is
+  configured; browser acceptance automation remains.
 - WEB-03 through WEB-04: current-user bootstrap, normalized role checks,
   permission-resource helpers, protected action gates and role-aware product
-  shell are implemented; per-role browser acceptance tests remain.
+  shell are implemented. Live SDK checks now cover student, employer, staff and
+  manager data visibility; full browser acceptance automation remains.
 - WEB-05 through WEB-06: shared operational states and end-to-end HTTPS login
   verification remain.
 - IAM-03: 22 custom FrontendAction permissions and eight application roles
@@ -60,12 +66,19 @@ Updated: 2026-09-14
 - npm run typecheck: passes.
 - npm run build: passes.
 - blocks data validate: 36 schemas, zero errors.
-- Secure Data dry run: 36 metadata creates, 36 field writes, 144 Custom access
-  settings, zero allow policies and zero existing live schemas.
+- Secure Data generation and deployment: 144 Custom operation settings plus
+  201 role-and-organization-scoped allow policies across 36 schemas.
 - Live Blocks aggregation: 36 schemas; READ, WRITE, EDIT and DELETE each report
   36 Custom, zero Public and zero User access; 144 total Custom permissions.
-- All live schema policy arrays and policy totals are empty.
-- Anonymous Blocks SDK read of AcademicPeriod is denied.
+- Live role checks: student sees three published opportunities and three owned
+  applications; employer sees five owned opportunities and three applications;
+  staff sees five opportunities and three applications; manager sees all five
+  opportunities, all three applications and the demo student profile.
+- Negative checks pass: employer cannot read StudentProfile, student cannot read
+  FollowUpFlag, and anonymous users cannot read Opportunity.
+- The demo seed completed 90 idempotent upsert operations across all 36 schemas
+  (87 distinct records because each of three applications is created and then
+  updated with its linked snapshots).
 
 ## External inputs required before production
 
@@ -84,8 +97,10 @@ Updated: 2026-09-14
 - Eight CampusCareer roles and 22 custom FrontendAction permissions now exist;
   all 53 reviewed role-permission additions are applied.
 - 36 custom Data schemas are live with all 144 schema-operation permissions set
-  to Custom, zero Public/User permissions and zero allow policies.
-- Anonymous access to the Data model is denied; no seed records were inserted.
+  to Custom, zero Public/User permissions and 201 scoped allow policies.
+- DELETE has no allow policy. Anonymous access remains denied.
+- A linked demo dataset spans every schema, with five opportunities and three
+  applications visible according to the four demo users' assigned roles.
 - Mail and Azure storage defaults exist.
 - No notification-channel configuration.
 - English, German and Bengali exist; no localization modules.

@@ -84,10 +84,9 @@ export function DashboardPage() {
           <h2 className="text-lg font-semibold">Implementation foundation</h2>
         </div>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-muted-foreground">
-          The authenticated shell, role boundaries, 36-collection Blocks data
-          model, and tenant configuration manifests are ready. Live data remains
-          intentionally unavailable until deny-by-default policies are proven
-          and applied.
+          The authenticated shell, role boundaries, and 36-collection Blocks
+          data model are live. Demo opportunities and applications are now
+          filtered by your organization and CampusCareer role.
         </p>
         <Link
           className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary"
