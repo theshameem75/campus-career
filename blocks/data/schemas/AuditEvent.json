@@ -1,0 +1,128 @@
+{
+  "collectionName": "AuditEvents",
+  "fields": [
+    {
+      "name": "actorUserId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Required by domain service; IAM user id or SYSTEM",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "actorRole",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; effective role",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "action",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; audited action",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "entityType",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; affected entity type",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "entityId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; affected entity id",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "beforeHash",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; before-state hash",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "afterHash",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; after-state hash",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "detailJson",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Optional; minimized non-secret metadata",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "occurredAt",
+      "type": "DateTime",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ISO 8601 UTC",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "correlationId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; operation correlation id",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "idempotencyKey",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": true,
+      "description": "Required by domain service; deterministic audit key",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "AuditEvent",
+  "schemaType": 1
+}

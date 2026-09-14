@@ -1,0 +1,106 @@
+{
+  "collectionName": "RightsRequests",
+  "fields": [
+    {
+      "name": "requesterUserId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Required by domain service; IAM user id",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "requestType",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ACCESS/EXPORT/CORRECTION/DELETION",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "status",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; OPEN/IN_REVIEW/APPROVED/REJECTED/COMPLETED",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "requestDetail",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Optional; request detail",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "requestedAt",
+      "type": "DateTime",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ISO 8601 UTC",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "resolvedAt",
+      "type": "DateTime",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; ISO 8601 UTC",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "resolvedByUserId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Optional; IAM user id",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "resolutionNote",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Optional; resolution note",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "revision",
+      "type": "Int",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; optimistic concurrency version",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "RightsRequest",
+  "schemaType": 1
+}

@@ -1,0 +1,117 @@
+{
+  "collectionName": "StudentExperiences",
+  "fields": [
+    {
+      "name": "studentProfileId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ref StudentProfile",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "experienceType",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; PROJECT/EMPLOYMENT/CERTIFICATION/PORTFOLIO",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "title",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Required by domain service; title",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "organizationName",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Optional; organization",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "description",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Required by domain service; evidence description",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "skillIds",
+      "type": "String",
+      "isArray": true,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; refs Skill",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "startDate",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; date YYYY-MM-DD",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "endDate",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; date YYYY-MM-DD",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "isCurrent",
+      "type": "Boolean",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; current experience",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "revision",
+      "type": "Int",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; optimistic concurrency version",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "StudentExperience",
+  "schemaType": 1
+}

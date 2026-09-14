@@ -1,0 +1,5 @@
+{
+  "isOidcEnabled": true,
+  "accountActionBaseUrl": "https://iam.seliseblocks.com",
+  "passwordStrengthCheckerRegex": "\\A(?=.{12,128}\\z)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_#@.,:-])[A-Za-z0-9_#@.,:-]+\\z"
+}

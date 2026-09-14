@@ -1,0 +1,51 @@
+{
+  "collectionName": "OpportunitySkills",
+  "fields": [
+    {
+      "name": "opportunitySkillKey",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": true,
+      "description": "Required by domain service; opportunityId:skillId:importance",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "opportunityId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ref Opportunity",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "skillId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ref Skill",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "importance",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; REQUIRED/PREFERRED",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "OpportunitySkill",
+  "schemaType": 1
+}

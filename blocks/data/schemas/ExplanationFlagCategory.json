@@ -1,0 +1,62 @@
+{
+  "collectionName": "ExplanationFlagCategories",
+  "fields": [
+    {
+      "name": "code",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": true,
+      "description": "Required by domain service; stable category code",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "label",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; student-facing label",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "description",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Optional; description",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "status",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ACTIVE/INACTIVE",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "revision",
+      "type": "Int",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; optimistic concurrency version",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "ExplanationFlagCategory",
+  "schemaType": 1
+}

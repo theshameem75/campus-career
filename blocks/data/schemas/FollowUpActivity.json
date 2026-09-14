@@ -1,0 +1,73 @@
+{
+  "collectionName": "FollowUpActivities",
+  "fields": [
+    {
+      "name": "followUpFlagId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ref FollowUpFlag",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "activityType",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; REMINDER/CONTACT/NOTE/ESCALATION/RESOLUTION",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "actorUserId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Required by domain service; IAM user id or SYSTEM",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "occurredAt",
+      "type": "DateTime",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; ISO 8601 UTC",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "note",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Optional; restricted activity note",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "idempotencyKey",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": true,
+      "description": "Required by domain service; deterministic activity key",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "FollowUpActivity",
+  "schemaType": 1
+}

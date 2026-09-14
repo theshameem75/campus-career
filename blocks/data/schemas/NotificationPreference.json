@@ -1,0 +1,51 @@
+{
+  "collectionName": "NotificationPreferences",
+  "fields": [
+    {
+      "name": "userId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": true,
+      "description": "Required by domain service; IAM user id",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "optionalDigestEmail",
+      "type": "Boolean",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; optional digest email enabled",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "optionalCoachingNotifications",
+      "type": "Boolean",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; optional coaching notifications enabled",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "revision",
+      "type": "Int",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; optimistic concurrency version",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    }
+  ],
+  "schemaName": "NotificationPreference",
+  "schemaType": 1
+}

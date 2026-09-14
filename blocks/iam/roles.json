@@ -1,0 +1,45 @@
+{
+  "roles": [
+    {
+      "name": "Pending User",
+      "slug": "pending-user",
+      "description": "Authenticated but unverified account with no CampusCareer domain access."
+    },
+    {
+      "name": "Student",
+      "slug": "student",
+      "description": "Verified student managing only their own profile, documents, applications, timeline and AI explanations."
+    },
+    {
+      "name": "Employer User",
+      "slug": "employer-user",
+      "description": "Verified employer member restricted to their IAM organization, postings, applicants and outcomes."
+    },
+    {
+      "name": "Career Staff",
+      "slug": "career-staff",
+      "description": "University career-services operator for opportunity approval, application screening and employer follow-up."
+    },
+    {
+      "name": "Career Manager",
+      "slug": "career-manager",
+      "parentRoleSlug": "career-staff",
+      "description": "Career-services supervisor for reference data, AI flags, escalations and exceptional corrections."
+    },
+    {
+      "name": "Department Stakeholder",
+      "slug": "department-stakeholder",
+      "description": "Department-scoped placement support and reporting user."
+    },
+    {
+      "name": "University Stakeholder",
+      "slug": "university-stakeholder",
+      "description": "Institution-level aggregate reporting user without routine student-record access."
+    },
+    {
+      "name": "University Superadmin",
+      "slug": "university-superadmin",
+      "description": "Restricted university administrator for identity, employer organizations, users, roles and access."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "permissions": [
+    {
+      "name": "Manage Own Student Profile",
+      "resource": "campus-career::student-profile::manage-own",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show student profile, experience, skills, consent and preference management."
+    },
+    {
+      "name": "Manage Own Student Documents",
+      "resource": "campus-career::student-document::manage-own",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show private CV upload, version, download and deletion actions."
+    },
+    {
+      "name": "Browse Published Opportunities",
+      "resource": "campus-career::opportunity::browse-published",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 4,
+      "description": "Show published opportunity discovery and detail screens."
+    },
+    {
+      "name": "Submit Own Applications",
+      "resource": "campus-career::application::submit-own",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show eligible application submission and withdrawal actions."
+    },
+    {
+      "name": "View Own Applications",
+      "resource": "campus-career::application::view-own",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show a student's own application list, timeline and outcomes."
+    },
+    {
+      "name": "View and Flag Own AI Explanations",
+      "resource": "campus-career::ai-explanation::view-flag-own",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show student-visible AI explanation and challenge actions."
+    },
+    {
+      "name": "Manage Employer Opportunities",
+      "resource": "campus-career::opportunity::manage-employer",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show opportunity actions for the active employer organization."
+    },
+    {
+      "name": "View Employer Applicants",
+      "resource": "campus-career::application::view-employer",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show approved applicant fields for postings owned by the active employer organization."
+    },
+    {
+      "name": "Manage Employer Outcomes",
+      "resource": "campus-career::outcome::manage-employer",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show outcome actions for postings owned by the active employer organization."
+    },
+    {
+      "name": "Review Opportunities",
+      "resource": "campus-career::opportunity::review",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show career-staff opportunity approval and rejection actions."
+    },
+    {
+      "name": "Screen Applications",
+      "resource": "campus-career::application::screen",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show career-staff rubric, shortlist and rejection actions."
+    },
+    {
+      "name": "Manage Employer Follow-up",
+      "resource": "campus-career::follow-up::manage",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show overdue queue, activity and resolution actions."
+    },
+    {
+      "name": "Verify Placements",
+      "resource": "campus-career::placement::verify",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show reported-hire verification and primary-placement actions."
+    },
+    {
+      "name": "View University Operations Analytics",
+      "resource": "campus-career::analytics::view-university",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show university operational dashboards and authorized drill-down."
+    },
+    {
+      "name": "Manage Reference Data",
+      "resource": "campus-career::reference-data::manage",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show manager actions for skills, periods, reasons, templates and settings."
+    },
+    {
+      "name": "Resolve AI Explanation Flags",
+      "resource": "campus-career::ai-explanation::resolve-flags",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show manager review, annotation, regeneration and withdrawal actions."
+    },
+    {
+      "name": "Approve Exceptional Corrections",
+      "resource": "campus-career::workflow::approve-correction",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show audited reopen and exceptional correction approval actions."
+    },
+    {
+      "name": "View Department Students",
+      "resource": "campus-career::student::view-department",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show approved student fields for the assigned department."
+    },
+    {
+      "name": "View Department Analytics",
+      "resource": "campus-career::analytics::view-department",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show analytics restricted to the assigned department."
+    },
+    {
+      "name": "View Aggregate University Analytics",
+      "resource": "campus-career::analytics::view-aggregate",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 3,
+      "description": "Show aggregate dashboards and accreditation reports."
+    },
+    {
+      "name": "Manage CampusCareer Access",
+      "resource": "campus-career::access::manage",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 1,
+      "description": "Show restricted role, permission and user-access administration."
+    },
+    {
+      "name": "Provision Employer Organizations",
+      "resource": "campus-career::employer::provision",
+      "resourceGroup": "campus-career",
+      "type": 2,
+      "severity": 2,
+      "description": "Show verified employer organization and user provisioning."
+    }
+  ],
+  "assignments": {
+    "pending-user": [],
+    "student": [
+      "campus-career::student-profile::manage-own",
+      "campus-career::student-document::manage-own",
+      "campus-career::opportunity::browse-published",
+      "campus-career::application::submit-own",
+      "campus-career::application::view-own",
+      "campus-career::ai-explanation::view-flag-own",
+      "blocks-data::directory::create-directory",
+      "blocks-data::directory::get-directory",
+      "blocks-data::file::create-file-version",
+      "blocks-data::file::delete-file",
+      "blocks-data::file::download-file",
+      "blocks-data::file::get-file",
+      "blocks-data::file::get-files",
+      "blocks-data::file::get-files-info",
+      "blocks-data::file::get-file-versions",
+      "blocks-data::file::get-pre-signed-url-for-upload",
+      "blocks-data::object::get-objects",
+      "blocks-data::object::get-trash",
+      "blocks-data::object::resolve-access",
+      "blocks-data::object::restore-object",
+      "blocks-data::object::search-objects"
+    ],
+    "employer-user": [
+      "campus-career::opportunity::manage-employer",
+      "campus-career::application::view-employer",
+      "campus-career::outcome::manage-employer",
+      "blocks-data::file::download-file",
+      "blocks-data::file::get-file",
+      "blocks-data::object::resolve-access"
+    ],
+    "career-staff": [
+      "campus-career::opportunity::review",
+      "campus-career::application::screen",
+      "campus-career::follow-up::manage",
+      "campus-career::placement::verify",
+      "campus-career::analytics::view-university",
+      "blocks-data::file::download-file",
+      "blocks-data::file::get-file",
+      "blocks-data::object::resolve-access"
+    ],
+    "career-manager": [
+      "campus-career::reference-data::manage",
+      "campus-career::ai-explanation::resolve-flags",
+      "campus-career::workflow::approve-correction"
+    ],
+    "department-stakeholder": [
+      "campus-career::student::view-department",
+      "campus-career::analytics::view-department"
+    ],
+    "university-stakeholder": ["campus-career::analytics::view-aggregate"],
+    "university-superadmin": [
+      "campus-career::access::manage",
+      "campus-career::employer::provision",
+      "blocks-iam::iam::create-organizations",
+      "blocks-iam::iam::mutate-organizations",
+      "blocks-iam::iam::organizations",
+      "blocks-iam::iam::mutate-users",
+      "blocks-iam::iam::users",
+      "blocks-iam::iam::mutate-roles",
+      "blocks-iam::iam::roles",
+      "blocks-iam::iam::mutate-permissions",
+      "blocks-iam::iam::permissions",
+      "blocks-iam::iam::security-audit"
+    ]
+  }
+}

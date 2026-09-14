@@ -8,7 +8,9 @@
     "setup:https": "npm run cert && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/add-dev-host.ps1",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "blocks:model": "node scripts/generate-blocks-model.mjs",
     "lint": "eslint .",
+    "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc -b --pretty false",
     "preview": "vite preview"
   },

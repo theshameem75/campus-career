@@ -1,0 +1,21 @@
+{
+  "organizationPolicy": {
+    "isMultiOrgEnabled": true,
+    "consentForMultiOrgEnable": true,
+    "allowOrgCreationFromSignup": false,
+    "allowOrgCreationFromPortal": false,
+    "allowOrgCreationFromCloud": true,
+    "allowOrgCreationFromConstruct": false
+  },
+  "signupPolicy": {
+    "isEmailPasswordSignUpEnabled": true,
+    "isSSoSignUpEnabled": true,
+    "defaultRolesOnSignUp": ["pending-user"],
+    "defaultPermissionsOnSignUp": []
+  },
+  "authPolicy": {
+    "isOidcEnabled": true,
+    "accountActionBaseUrl": "https://iam.seliseblocks.com",
+    "passwordStrengthCheckerRegex": "\\A(?=.{12,128}\\z)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_#@.,:-])[A-Za-z0-9_#@.,:-]+\\z"
+  }
+}

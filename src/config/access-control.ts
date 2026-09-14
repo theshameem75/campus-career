@@ -1,0 +1,26 @@
+export const permissions = {
+  manageOwnProfile: "campus-career::student-profile::manage-own",
+  manageOwnDocuments: "campus-career::student-document::manage-own",
+  browseOpportunities: "campus-career::opportunity::browse-published",
+  submitApplications: "campus-career::application::submit-own",
+  viewOwnApplications: "campus-career::application::view-own",
+  viewOwnExplanations: "campus-career::ai-explanation::view-flag-own",
+  manageEmployerOpportunities: "campus-career::opportunity::manage-employer",
+  viewEmployerApplicants: "campus-career::application::view-employer",
+  manageEmployerOutcomes: "campus-career::outcome::manage-employer",
+  reviewOpportunities: "campus-career::opportunity::review",
+  screenApplications: "campus-career::application::screen",
+  manageFollowUp: "campus-career::follow-up::manage",
+  verifyPlacements: "campus-career::placement::verify",
+  viewUniversityAnalytics: "campus-career::analytics::view-university",
+  manageReferenceData: "campus-career::reference-data::manage",
+  resolveExplanationFlags: "campus-career::ai-explanation::resolve-flags",
+  approveCorrections: "campus-career::workflow::approve-correction",
+  viewDepartmentStudents: "campus-career::student::view-department",
+  viewDepartmentAnalytics: "campus-career::analytics::view-department",
+  viewAggregateAnalytics: "campus-career::analytics::view-aggregate",
+  manageAccess: "campus-career::access::manage",
+  provisionEmployers: "campus-career::employer::provision",
+} as const;
+
+export type Permission = (typeof permissions)[keyof typeof permissions];

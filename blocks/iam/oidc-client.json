@@ -1,0 +1,17 @@
+{
+  "itemId": "eafc9ab8-69df-453c-b708-627e98cdef21",
+  "clientDisplayName": "CampusCareer Web",
+  "clientType": "public",
+  "redirectUris": [
+    "https://dbfvug-elgew.slsblx.com:5173/login/callback",
+    "https://dbfvug-elgew.slsblx.com/login/callback"
+  ],
+  "postLogoutRedirectUris": [
+    "https://dbfvug-elgew.slsblx.com:5173/",
+    "https://dbfvug-elgew.slsblx.com/"
+  ],
+  "scope": "openid profile",
+  "requirePkce": true,
+  "active": true,
+  "registerAsIdentityProvider": true
+}
