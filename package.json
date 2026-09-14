@@ -10,6 +10,7 @@
     "build": "tsc -b && vite build",
     "blocks:model": "node scripts/generate-blocks-model.mjs",
     "blocks:security": "node scripts/generate-blocks-security.mjs",
+    "blocks:seed": "node scripts/seed-campuscareer-demo.mjs",
     "lint": "eslint .",
     "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc -b --pretty false",

@@ -5,11 +5,13 @@ import { CallbackPage } from "@/features/auth/callback-page";
 import { LoginPage } from "@/features/auth/login-page";
 import { ProtectedRoute } from "@/features/auth/protected-route";
 import { UnauthorizedPage } from "@/features/auth/unauthorized-page";
+import { ApplicationsPage } from "@/features/applications/applications-page";
 import {
   DashboardPage,
   WorkspacePage,
 } from "@/features/dashboard/dashboard-page";
 import type { UserRole } from "@/types/auth";
+import { OpportunitiesPage } from "@/features/opportunities/opportunities-page";
 
 const staff: readonly UserRole[] = [
   "career-staff",
@@ -70,7 +72,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/opportunities",
-                element: <WorkspacePage area="Opportunities" />,
+                element: <OpportunitiesPage />,
               },
             ],
           },
@@ -87,7 +89,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/applications",
-                element: <WorkspacePage area="Applications" />,
+                element: <ApplicationsPage />,
               },
             ],
           },
@@ -104,11 +106,11 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/employer",
-                element: <WorkspacePage area="Employer workspace" />,
+                element: <OpportunitiesPage mode="employer" />,
               },
               {
                 path: "/candidates",
-                element: <WorkspacePage area="Candidates and outcomes" />,
+                element: <ApplicationsPage employerView />,
               },
             ],
           },
@@ -125,7 +127,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/approvals",
-                element: <WorkspacePage area="Opportunity approvals" />,
+                element: <OpportunitiesPage mode="approval" />,
               },
               {
                 path: "/follow-up",

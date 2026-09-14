@@ -74,13 +74,45 @@ test("self-registration grants only the pending role", async () => {
   assert.equal(config.organizationPolicy.allowOrgCreationFromPortal, false);
 });
 
-test("every Data operation starts Custom with no allow policies", async () => {
+test("every Data operation stays Custom and policies are role scoped", async () => {
   const plan = await json(
     new URL("../blocks/data/security-plan.json", import.meta.url),
   );
   const schemas = new Set(plan.security.map((entry) => entry.schemaName));
   assert.equal(schemas.size, 36);
-  assert.deepEqual(plan.policies, []);
+  assert.ok(plan.policies.length > 0);
+  assert.ok(plan.policies.every((entry) => entry.isAllowPolicy === true));
+  assert.ok(plan.policies.every((entry) => entry.policyType === 0));
+  assert.ok(
+    plan.policies.every((entry) => [0, 1, 2].includes(entry.operation)),
+  );
+  for (const entry of plan.policies) {
+    assert.ok(schemas.has(entry.schemaName), entry.schemaName);
+    assert.equal(entry.ruleGroup.logicalOperator, 0);
+    assert.deepEqual(entry.ruleGroup.nestedGroups, []);
+    assert.ok(
+      entry.ruleGroup.rules.some(
+        (rule) =>
+          rule.leftSource === 0 &&
+          rule.leftOperand === "roles" &&
+          rule.operator === 6 &&
+          rule.rightSource === 2 &&
+          typeof rule.staticValue === "string",
+      ),
+      entry.policyName,
+    );
+    assert.ok(
+      entry.ruleGroup.rules.some(
+        (rule) =>
+          rule.leftSource === 0 &&
+          rule.leftOperand === "organizationId" &&
+          rule.operator === 0 &&
+          rule.rightSource === 1 &&
+          rule.rightOperand === "OrganizationId",
+      ),
+      entry.policyName,
+    );
+  }
   for (const schemaName of schemas) {
     const entries = plan.security.filter(
       (entry) => entry.schemaName === schemaName,

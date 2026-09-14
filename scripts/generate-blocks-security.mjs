@@ -2,6 +2,7 @@ import { execFileSync } from "node:child_process";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildAccessPolicies } from "./campuscareer-access-policies.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const schemasDirectory = path.join(root, "blocks", "data", "schemas");
@@ -20,6 +21,7 @@ const schemaNames = (await readdir(schemasDirectory))
   .filter((name) => name.endsWith(".json"))
   .map((name) => name.replace(/\.json$/, ""))
   .sort();
+const policies = buildAccessPolicies(schemaNames);
 
 const plan = {
   defaultEffect: "DENY",
@@ -27,7 +29,7 @@ const plan = {
   accessLevelValue: 3,
   policyType: "RLS",
   policyTypeValue: 0,
-  policies: [],
+  policies,
   security: schemaNames.flatMap((schemaName) =>
     operations.map((operation) => ({
       schemaName,
@@ -121,11 +123,13 @@ const rules = {
       policyType: entry.policyTypeValue,
       schemaId: byName.get(entry.schemaName),
     })),
-  policies: [],
+  policies: policies.filter((entry) =>
+    selectedSchemaNames.includes(entry.schemaName),
+  ),
 };
 await writeFile(rulesPath, `${JSON.stringify(rules, null, 2)}\n`);
 console.log(
-  `Resolved ${rules.security.length} Custom security settings for ${selectedSchemaNames.length} live schemas; allow-policy count is zero.`,
+  `Resolved ${rules.security.length} Custom security settings and ${rules.policies.length} scoped allow policies for ${selectedSchemaNames.length} live schemas.`,
 );
 
 // Confirm the written file can be parsed before a deploy command consumes it.
