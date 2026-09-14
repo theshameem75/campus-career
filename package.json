@@ -23,6 +23,7 @@
     "@radix-ui/react-tooltip": "^1.2.16",
     "@seliseblocks/client": "^0.2.0",
     "@tanstack/react-query": "latest",
+    "ajv": "^8.20.0",
     "class-variance-authority": "latest",
     "clsx": "latest",
     "lucide-react": "latest",
