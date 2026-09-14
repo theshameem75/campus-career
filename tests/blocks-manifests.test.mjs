@@ -73,3 +73,24 @@ test("self-registration grants only the pending role", async () => {
   assert.equal(config.organizationPolicy.allowOrgCreationFromSignup, false);
   assert.equal(config.organizationPolicy.allowOrgCreationFromPortal, false);
 });
+
+test("every Data operation starts Custom with no allow policies", async () => {
+  const plan = await json(
+    new URL("../blocks/data/security-plan.json", import.meta.url),
+  );
+  const schemas = new Set(plan.security.map((entry) => entry.schemaName));
+  assert.equal(schemas.size, 36);
+  assert.deepEqual(plan.policies, []);
+  for (const schemaName of schemas) {
+    const entries = plan.security.filter(
+      (entry) => entry.schemaName === schemaName,
+    );
+    assert.deepEqual(
+      entries.map((entry) => entry.operationValue).sort(),
+      [0, 1, 2, 3],
+    );
+    assert.ok(entries.every((entry) => entry.accessLevelValue === 3));
+    assert.ok(entries.every((entry) => entry.policyTypeValue === 0));
+    assert.ok(entries.every((entry) => entry.fieldNames.length === 0));
+  }
+});

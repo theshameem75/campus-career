@@ -11,6 +11,11 @@ Updated: 2026-09-14
   deployment conventions recorded.
 - FND-06: GitHub Actions quality gate added for deterministic schema generation,
   manifest tests, lint, typecheck and production build.
+- DAT-02 through DAT-06: all 36 schema definitions and fields are generated,
+  deterministic, locally validated and deployed to Blocks Data.
+- DAT-07: every schema is locked to Custom access for READ, WRITE, EDIT and
+  DELETE with zero allow policies. The guarded metadata-first deployer creates
+  and locks empty schemas before adding fields.
 - IAM-02: application roles and frontend-action permission matrix authored as
   source-controlled manifests; live role creation remains approval-gated.
 - DAT-01: existing Blocks-managed Data source confirmed.
@@ -22,8 +27,9 @@ Updated: 2026-09-14
 
 ## In progress
 
-- DAT-02 through DAT-08: schema field design, portable JSON and deny-by-default
-  access policies.
+- DAT-08: field-level value validation remains after the secure schema baseline.
+- Data-backed browser CRUD remains intentionally blocked until a trusted
+  backend/worker authorization contract or reviewed scoped policies are ready.
 - WEB-01: singleton Blocks SDK client and build-time environment validation
   implemented.
 - WEB-02: hosted-login redirect, callback, cookie-session bootstrap, logout and
@@ -49,11 +55,17 @@ Updated: 2026-09-14
 
 ## Validation evidence
 
-- npm test: three manifest/model security tests pass.
+- npm test: four manifest/model security tests pass.
 - npm run lint: passes.
 - npm run typecheck: passes.
 - npm run build: passes.
 - blocks data validate: 36 schemas, zero errors.
+- Secure Data dry run: 36 metadata creates, 36 field writes, 144 Custom access
+  settings, zero allow policies and zero existing live schemas.
+- Live Blocks aggregation: 36 schemas; READ, WRITE, EDIT and DELETE each report
+  36 Custom, zero Public and zero User access; 144 total Custom permissions.
+- All live schema policy arrays and policy totals are empty.
+- Anonymous Blocks SDK read of AcademicPeriod is denied.
 
 ## External inputs required before production
 
@@ -71,7 +83,9 @@ Updated: 2026-09-14
 - Multi-organization enabled with Cloud-only organization creation.
 - Eight CampusCareer roles and 22 custom FrontendAction permissions now exist;
   all 53 reviewed role-permission additions are applied.
-- Zero custom Data schemas.
+- 36 custom Data schemas are live with all 144 schema-operation permissions set
+  to Custom, zero Public/User permissions and zero allow policies.
+- Anonymous access to the Data model is denied; no seed records were inserted.
 - Mail and Azure storage defaults exist.
 - No notification-channel configuration.
 - English, German and Bengali exist; no localization modules.

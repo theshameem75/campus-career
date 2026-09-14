@@ -1,0 +1,1450 @@
+{
+  "defaultEffect": "DENY",
+  "accessLevel": "Custom",
+  "accessLevelValue": 3,
+  "policyType": "RLS",
+  "policyTypeValue": 0,
+  "policies": [],
+  "security": [
+    {
+      "schemaName": "AcademicPeriod",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AcademicPeriod",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AcademicPeriod",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AcademicPeriod",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AccreditationReport",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AccreditationReport",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AccreditationReport",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AccreditationReport",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Application",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Application",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Application",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Application",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationDocument",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationDocument",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationDocument",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationDocument",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationProfileSnapshot",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationProfileSnapshot",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationProfileSnapshot",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationProfileSnapshot",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AuditEvent",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AuditEvent",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AuditEvent",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "AuditEvent",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "CoachingDigest",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "CoachingDigest",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "CoachingDigest",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "CoachingDigest",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Department",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Department",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Department",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Department",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "DirectoryRecord",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "DirectoryRecord",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "DirectoryRecord",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "DirectoryRecord",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Employer",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Employer",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Employer",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Employer",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerMembership",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerMembership",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerMembership",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerMembership",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerOutcome",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerOutcome",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerOutcome",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "EmployerOutcome",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlag",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlag",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlag",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlag",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlagCategory",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlagCategory",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlagCategory",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ExplanationFlagCategory",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpActivity",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpActivity",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpActivity",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpActivity",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpFlag",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpFlag",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpFlag",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "FollowUpFlag",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "LegalHold",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "LegalHold",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "LegalHold",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "LegalHold",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MatchExplanation",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MatchExplanation",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MatchExplanation",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MatchExplanation",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MetricSnapshot",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MetricSnapshot",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MetricSnapshot",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "MetricSnapshot",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationDelivery",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationDelivery",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationDelivery",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationDelivery",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationPreference",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationPreference",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationPreference",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "NotificationPreference",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Opportunity",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Opportunity",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Opportunity",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Opportunity",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityDepartment",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityDepartment",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityDepartment",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityDepartment",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySkill",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySkill",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySkill",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySkill",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySnapshot",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySnapshot",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySnapshot",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunitySnapshot",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityType",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityType",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityType",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "OpportunityType",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RejectionReason",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RejectionReason",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RejectionReason",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RejectionReason",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RightsRequest",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RightsRequest",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RightsRequest",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "RightsRequest",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScheduledJobRun",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScheduledJobRun",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScheduledJobRun",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScheduledJobRun",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScreeningDecision",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScreeningDecision",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScreeningDecision",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "ScreeningDecision",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Skill",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Skill",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Skill",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "Skill",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentDocument",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentDocument",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentDocument",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentDocument",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentExperience",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentExperience",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentExperience",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentExperience",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentProfile",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentProfile",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentProfile",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "StudentProfile",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "TenantSettings",
+      "operation": "READ",
+      "operationValue": 0,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "TenantSettings",
+      "operation": "WRITE",
+      "operationValue": 1,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "TenantSettings",
+      "operation": "EDIT",
+      "operationValue": 2,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    },
+    {
+      "schemaName": "TenantSettings",
+      "operation": "DELETE",
+      "operationValue": 3,
+      "accessLevel": "Custom",
+      "accessLevelValue": 3,
+      "policyType": "RLS",
+      "policyTypeValue": 0,
+      "fieldNames": []
+    }
+  ]
+}

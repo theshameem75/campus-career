@@ -19,7 +19,9 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run blocks:model
+      - run: npm run blocks:security
       - run: git diff --exit-code -- blocks/data/schemas
+      - run: git diff --exit-code -- blocks/data/security-plan.json
       - run: npm test
       - run: npm run lint
       - run: npm run typecheck
