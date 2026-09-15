@@ -2331,6 +2331,282 @@
       "isAllowPolicy": true
     },
     {
+      "schemaName": "ApplicationStageEvent",
+      "policyName": "employer-user-edit-own",
+      "policyDescription": "Allow the named CampusCareer role within the active organization.",
+      "policyType": 0,
+      "operation": 2,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 0,
+            "leftOperand": "roles",
+            "operator": 6,
+            "rightSource": 2,
+            "rightOperand": "",
+            "rightOperands": [],
+            "staticValue": "employer-user",
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "OrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "employerOrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 100,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "policyName": "employer-user-read-own",
+      "policyDescription": "Allow the named CampusCareer role within the active organization.",
+      "policyType": 0,
+      "operation": 0,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 0,
+            "leftOperand": "roles",
+            "operator": 6,
+            "rightSource": 2,
+            "rightOperand": "",
+            "rightOperands": [],
+            "staticValue": "employer-user",
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "OrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "employerOrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 100,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "policyName": "employer-user-write-own",
+      "policyDescription": "Allow the named CampusCareer role within the active organization.",
+      "policyType": 0,
+      "operation": 1,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 0,
+            "leftOperand": "roles",
+            "operator": 6,
+            "rightSource": 2,
+            "rightOperand": "",
+            "rightOperands": [],
+            "staticValue": "employer-user",
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "OrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "employerOrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 100,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "policyName": "student-edit-own",
+      "policyDescription": "Allow the named CampusCareer role within the active organization.",
+      "policyType": 0,
+      "operation": 2,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 0,
+            "leftOperand": "roles",
+            "operator": 6,
+            "rightSource": 2,
+            "rightOperand": "",
+            "rightOperands": [],
+            "staticValue": "student",
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "OrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "userId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "studentUserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 100,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "policyName": "student-read-own",
+      "policyDescription": "Allow the named CampusCareer role within the active organization.",
+      "policyType": 0,
+      "operation": 0,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 0,
+            "leftOperand": "roles",
+            "operator": 6,
+            "rightSource": 2,
+            "rightOperand": "",
+            "rightOperands": [],
+            "staticValue": "student",
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "OrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "userId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "studentUserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 100,
+      "isAllowPolicy": true
+    },
+    {
+      "schemaName": "ApplicationStageEvent",
+      "policyName": "student-write-own",
+      "policyDescription": "Allow the named CampusCareer role within the active organization.",
+      "policyType": 0,
+      "operation": 1,
+      "fieldNames": [],
+      "ruleGroup": {
+        "logicalOperator": 0,
+        "rules": [
+          {
+            "leftSource": 0,
+            "leftOperand": "roles",
+            "operator": 6,
+            "rightSource": 2,
+            "rightOperand": "",
+            "rightOperands": [],
+            "staticValue": "student",
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "organizationId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "OrganizationId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          },
+          {
+            "leftSource": 0,
+            "leftOperand": "userId",
+            "operator": 0,
+            "rightSource": 1,
+            "rightOperand": "studentUserId",
+            "rightOperands": [],
+            "staticValue": null,
+            "description": null
+          }
+        ],
+        "nestedGroups": []
+      },
+      "priority": 100,
+      "isAllowPolicy": true
+    },
+    {
       "schemaName": "AuditEvent",
       "policyName": "career-manager-edit",
       "policyDescription": "Allow the named CampusCareer role within the active organization.",

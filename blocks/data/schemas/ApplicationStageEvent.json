@@ -13,6 +13,28 @@
       "validationRule": null
     },
     {
+      "name": "studentUserId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": true,
+      "isUniqueData": false,
+      "description": "Required by domain service; student IAM user id snapshot",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
+      "name": "employerOrganizationId",
+      "type": "String",
+      "isArray": false,
+      "isPIIData": false,
+      "isUniqueData": false,
+      "description": "Required by domain service; Blocks IAM employer organization id snapshot",
+      "requiredOn": "None",
+      "fields": [],
+      "validationRule": null
+    },
+    {
       "name": "fromStage",
       "type": "String",
       "isArray": false,

@@ -290,10 +290,14 @@ async function createStageEvent(
   const correlationId = crypto.randomUUID();
   return collection<StageEvent>("ApplicationStageEvent", [
     "applicationId",
+    "studentUserId",
+    "employerOrganizationId",
     "toStage",
     "occurredAt",
   ]).create({
     applicationId: application.ItemId,
+    studentUserId: application.studentUserId,
+    employerOrganizationId: application.employerOrganizationId,
     fromStage,
     toStage,
     actorUserId: session.user.id,
@@ -380,6 +384,8 @@ export async function applyToOpportunity(
   const application: Application = {
     ItemId: itemId,
     opportunityId: opportunity.ItemId,
+    studentUserId: session.user.id,
+    employerOrganizationId: opportunity.employerOrganizationId,
     status: "SUBMITTED",
   };
 

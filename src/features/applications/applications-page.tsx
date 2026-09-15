@@ -54,7 +54,10 @@ export function ApplicationsPage({ employerView = false }: { employerView?: bool
       return recordEmployerOutcome(application, type as "INTERVIEW_SCHEDULED" | "INTERVIEWED" | "OFFERED" | "HIRED" | "NOT_SELECTED", session);
     },
     onSuccess: async () => { await refresh(); toast.success("Application workflow updated"); },
-    onError: (error) => toast.error(message(error)),
+    onError: async (error) => {
+      await refresh();
+      toast.error(message(error));
+    },
   });
   const opportunityNames = new Map((query.data?.opportunities ?? []).map((item) => [item.ItemId, item.title]));
   const isStudent = Boolean(session && hasRole(session.roles, "student"));
@@ -78,6 +81,13 @@ export function ApplicationsPage({ employerView = false }: { employerView?: bool
           const selectedReason = reasons.find((reason) => reason.code === reasonCodes[application.ItemId]);
           const canScreen = isStaff && ["SUBMITTED", "NEEDS_REVIEW"].includes(application.status || "");
           const canEmployerUpdate = employerView && isEmployer && ["SHORTLISTED", "INTERVIEW", "INTERVIEWED", "OFFERED"].includes(application.status || "");
+          const employerActions = application.status === "SHORTLISTED"
+            ? [{ value: "INTERVIEW_SCHEDULED", label: "Schedule interview" }, { value: "NOT_SELECTED", label: "Not selected" }]
+            : application.status === "INTERVIEW"
+              ? [{ value: "INTERVIEWED", label: "Interviewed" }, { value: "NOT_SELECTED", label: "Not selected" }]
+              : application.status === "INTERVIEWED"
+                ? [{ value: "OFFERED", label: "Offer" }, { value: "NOT_SELECTED", label: "Not selected" }]
+                : [{ value: "HIRED", label: "Hired" }, { value: "NOT_SELECTED", label: "Not selected" }];
           return (
             <article className="rounded-2xl border bg-card p-5 shadow-sm" key={application.ItemId}>
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -117,7 +127,7 @@ export function ApplicationsPage({ employerView = false }: { employerView?: bool
                 <div className="mt-5 border-t pt-4">
                   <p className="mb-3 flex items-center gap-2 text-sm font-medium"><BriefcaseBusiness className="size-4" />Record employer outcome</p>
                   <div className="flex flex-wrap gap-2">
-                    {[{ value: "INTERVIEW_SCHEDULED", label: "Schedule interview" }, { value: "INTERVIEWED", label: "Interviewed" }, { value: "OFFERED", label: "Offer" }, { value: "HIRED", label: "Hired" }, { value: "NOT_SELECTED", label: "Not selected" }].map((outcome) => <Button key={outcome.value} size="sm" variant={outcome.value === "HIRED" ? "default" : "outline"} disabled={action.isPending} onClick={() => action.mutate({ type: outcome.value, application })}>{outcome.label}</Button>)}
+                    {employerActions.map((outcome) => <Button key={outcome.value} size="sm" variant={outcome.value === "HIRED" ? "default" : "outline"} disabled={action.isPending} onClick={() => action.mutate({ type: outcome.value, application })}>{outcome.label}</Button>)}
                   </div>
                 </div>
               )}

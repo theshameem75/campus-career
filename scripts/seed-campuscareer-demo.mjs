@@ -529,6 +529,8 @@ for (const [index, opportunity] of opportunities.slice(0, 3).entries()) {
     { idempotencyKey: `demo-stage-${index + 1}` },
     {
       applicationId,
+      studentUserId: USERS.student,
+      employerOrganizationId: "default",
       fromStage: "DRAFT",
       toStage: ["INTERVIEW", "SUBMITTED", "OFFERED"][index],
       actorUserId: index === 1 ? USERS.student : USERS.staff,

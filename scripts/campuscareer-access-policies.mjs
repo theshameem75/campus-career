@@ -27,6 +27,7 @@ const studentReferenceSchemas = [
 
 const studentOwnedSchemas = {
   Application: "studentUserId",
+  ApplicationStageEvent: "studentUserId",
   NotificationDelivery: "recipientUserId",
   NotificationPreference: "userId",
   StudentDocument: "ownerUserId",
@@ -35,6 +36,7 @@ const studentOwnedSchemas = {
 
 const employerOwnedSchemas = {
   Application: "employerOrganizationId",
+  ApplicationStageEvent: "employerOrganizationId",
   Employer: "organizationId",
   EmployerOutcome: "employerOrganizationId",
   Opportunity: "employerOrganizationId",

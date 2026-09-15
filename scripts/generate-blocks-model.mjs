@@ -348,6 +348,14 @@ const schemas = {
   ],
   ApplicationStageEvent: [
     required("applicationId", "String", "ref Application"),
+    required("studentUserId", "String", "student IAM user id snapshot", {
+      pii: true,
+    }),
+    required(
+      "employerOrganizationId",
+      "String",
+      "Blocks IAM employer organization id snapshot",
+    ),
     optional("fromStage", "String", "previous stage"),
     required("toStage", "String", "new stage"),
     required("actorUserId", "String", "IAM user id or SYSTEM", { pii: true }),
