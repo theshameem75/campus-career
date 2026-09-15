@@ -6,12 +6,10 @@ import { LoginPage } from "@/features/auth/login-page";
 import { ProtectedRoute } from "@/features/auth/protected-route";
 import { UnauthorizedPage } from "@/features/auth/unauthorized-page";
 import { ApplicationsPage } from "@/features/applications/applications-page";
-import {
-  DashboardPage,
-  WorkspacePage,
-} from "@/features/dashboard/dashboard-page";
+import { DashboardPage } from "@/features/dashboard/dashboard-page";
 import type { UserRole } from "@/types/auth";
 import { OpportunitiesPage } from "@/features/opportunities/opportunities-page";
+import { AdministrationPage, AnalyticsPage, FollowUpPage, StudentProfilePage } from "@/features/workspaces/workspace-pages";
 
 const staff: readonly UserRole[] = [
   "career-staff",
@@ -54,7 +52,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/profile",
-                element: <WorkspacePage area="Student profile and CVs" />,
+                element: <StudentProfilePage />,
               },
             ],
           },
@@ -131,7 +129,7 @@ export const router = createBrowserRouter([
               },
               {
                 path: "/follow-up",
-                element: <WorkspacePage area="Follow-up queue" />,
+                element: <FollowUpPage />,
               },
             ],
           },
@@ -149,7 +147,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/analytics",
-                element: <WorkspacePage area="Analytics and reporting" />,
+                element: <AnalyticsPage />,
               },
             ],
           },
@@ -163,7 +161,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: "/administration",
-                element: <WorkspacePage area="Platform administration" />,
+                element: <AdministrationPage />,
               },
             ],
           },

@@ -5,34 +5,25 @@ import {
   FileCheck2,
   GraduationCap,
 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/features/auth/use-auth";
+import { dashboardCounts } from "@/features/career/career-api";
 import { roleLabels } from "@/types/auth";
-
-const cards = [
-  {
-    label: "Active opportunities",
-    value: "—",
-    detail: "Live approved postings",
-    icon: BriefcaseBusiness,
-  },
-  {
-    label: "Applications",
-    value: "—",
-    detail: "Current academic cycle",
-    icon: FileCheck2,
-  },
-  {
-    label: "Follow-ups due",
-    value: "—",
-    detail: "Outcome confirmations",
-    icon: CalendarClock,
-  },
-];
 
 export function DashboardPage() {
   const { session } = useAuth();
   const pending = session?.role === "pending-user";
+  const counts = useQuery({
+    queryKey: ["dashboard-counts", session?.user.id],
+    queryFn: dashboardCounts,
+    enabled: Boolean(session && !pending),
+  });
+  const cards = [
+    { label: "Active opportunities", value: counts.data?.opportunities ?? "—", detail: "Live approved postings", icon: BriefcaseBusiness },
+    { label: "Applications", value: counts.data?.applications ?? "—", detail: "Visible in your role scope", icon: FileCheck2 },
+    { label: "Follow-ups due", value: counts.data?.followUps ?? "—", detail: "Open outcome confirmations", icon: CalendarClock },
+  ];
   return (
     <div className="space-y-7">
       <div>
